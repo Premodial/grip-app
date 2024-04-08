@@ -1,0 +1,15 @@
+<div role="main">
+  <div class="map-container">
+    <div id="map">
+      <app-map-marker [map]="mapService.map" [location]="selectedLocation" [message]="coverageMessage"></app-map-marker>
+    </div>
+    <input id="autocomplete" class="autocomplete" placeholder="Enter address" type="text">
+    <app-controls></app-controls>
+    <!-- Logout Button -->
+    <button id="logoutButton" class="logout-button" (click)="logout()">Logout</button>
+    <mat-progress-spinner *ngIf="!isLoadingServices" class="spinner"></mat-progress-spinner>
+  </div>
+  <ng-container *ngIf="showModal">
+    <app-network-services-modal [isVisible]="showModal" [networkServices]="availableServices" (modalClosed)="handleModalClosed()" [searchedAddress]="selectedLocation?.toString()"></app-network-services-modal>
+  </ng-container>
+</div>

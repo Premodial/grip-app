@@ -1,0 +1,28 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  background-color: #eee;
+  border-radius: 0.3125rem;
+}
+
+button {
+  padding: 0.625rem 1.25rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.1875rem;
+  background-color: black;
+  color: white;
+  &:hover {
+      background-color: #333;
+      color: #fff;
+  }
+}
+
+app-controls {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  z-index: 1;
+}

@@ -1,0 +1,18 @@
+<div class="login-container">
+  <!-- Title for the Login Form -->
+  <h1>Geo-Risk Information Platforms</h1>
+  
+  <!-- Login Form -->
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" formControlName="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" id="password" required>
+    </div>
+    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+  </form>
+</div>
+

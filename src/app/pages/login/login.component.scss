@@ -1,0 +1,50 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; // Keeps as is, since vh is a relative unit
+    background-color: white;
+    padding: 2rem; // Use rem for padding, relative to root font-size
+    border-radius: 0.5rem; // Use rem for consistent scaling
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); // Use rem for shadow spread
+    width: 100%; // Use % to make width responsive, max-width to cap it
+    margin: auto;
+
+    h1 {
+      color: #333333;
+      margin-bottom: 1.25rem; // Use rem for space below the title
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem; // Use rem for consistent spacing
+      width: 100%; // Full width to be responsive within the container
+
+      label {
+        display: block;
+        margin-bottom: 0.3125rem; // Use rem, smaller than other margins for subtlety
+      }
+
+      input {
+        width: 20rem; // Full width of its container
+        padding: 0.625rem; // Use rem for padding
+        border-radius: 0.3125rem; // Use rem for border-radius
+        border: 1px solid #ccc; // Border can stay in pixels since it's minimal
+      }
+    }
+
+    button {
+      width: 100%; // Full width to match the inputs
+      background-color: #333333;
+      color: white;
+      padding: 0.625rem 1.25rem; // Use rem for padding
+      border: none;
+      border-radius: 0.3125rem; // Use rem for border-radius
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.9;
+        cursor: not-allowed;
+      }
+    }
+}

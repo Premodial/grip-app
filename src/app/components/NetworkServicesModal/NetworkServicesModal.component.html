@@ -1,0 +1,16 @@
+<div *ngIf="isVisible" class="modal">
+  <div class="modal-content">
+    <span class="close-button" (click)="closeModal()">&times;</span>
+    <h2>Available Network Services</h2>
+    <ul>
+      <li *ngFor="let service of networkServices">{{ service.name }}</li>
+    </ul>
+    <!-- Conditionally display the Download Report button or the no coverage message -->
+    <div *ngIf="networkServices.length > 0; else noCoverage">
+      <button (click)="downloadReport()">Download Report</button>
+    </div>
+    <ng-template #noCoverage>
+      <p>There is no network package coverage at this location.</p>
+    </ng-template>
+  </div>
+</div>
