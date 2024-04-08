@@ -1,27 +1,39 @@
-# App
+# Angular Map Services App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+This project utilizes Angular to create an interactive map interface where users can explore network coverage, search for specific addresses, and view available network services at selected locations. The app leverages modern web technologies to provide a seamless and responsive user experience.
 
-## Development server
+## 🚀 How to use
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Follow these steps to get the app up and running:
 
-## Code scaffolding
+1. Ensure you have Node.js and npm installed. If not, download and install [Node.js](https://nodejs.org/) which includes npm.
+2. Clone the repository to your local machine.
+3. Open a terminal and navigate to the project directory.
+4. Run the following command to install all the necessary packages:
+   
+    ```sh
+    npm i
+    ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   If you encounter issues related to legacy dependencies or peer dependency conflicts, try installing with the `--legacy-peer-deps` flag:
 
-## Build
+    ```sh
+    npm i --legacy-peer-deps
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+5. To start the Angular development server, use the following command:
 
-## Running unit tests
+    ```sh
+    ng serve
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+6. Open a web browser and navigate to `http://localhost:4200/` to view the app. The application will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
+## 📝 Notes
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli). For more help on the Angular CLI, use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Ensure that your environment is set up to support Angular development, including the Angular CLI.
 
-## Further help
+### 🔑 Access Keys
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Certain functionalities of the app may require access keys, especially for interacting with third-party services like map providers. These keys should be stored securely and not checked into version control. For access to these keys or to learn more about configuring them in your local environment, please contact the project administrator or the person who shared this repository with you.
