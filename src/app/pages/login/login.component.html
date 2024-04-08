@@ -1,9 +1,6 @@
 <div class="login-container">
-  <!-- Title for the Login Form -->
   <h1>Geo-Risk Information Platforms</h1>
-  
-  <!-- Login Form -->
-  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" formControlName="email" id="email" required>

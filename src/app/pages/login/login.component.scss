@@ -3,43 +3,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; // Keeps as is, since vh is a relative unit
+    min-height: 100vh;
     background-color: white;
-    padding: 2rem; // Use rem for padding, relative to root font-size
-    border-radius: 0.5rem; // Use rem for consistent scaling
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); // Use rem for shadow spread
-    width: 100%; // Use % to make width responsive, max-width to cap it
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
     margin: auto;
 
     h1 {
       color: #333333;
-      margin-bottom: 1.25rem; // Use rem for space below the title
+      margin-bottom: 1.25rem;
     }
 
     .form-group {
-      margin-bottom: 1.25rem; // Use rem for consistent spacing
-      width: 100%; // Full width to be responsive within the container
+      margin-bottom: 1.25rem;
+      width: 100%;
 
       label {
         display: block;
-        margin-bottom: 0.3125rem; // Use rem, smaller than other margins for subtlety
+        margin-bottom: 0.3125rem;
       }
 
       input {
-        width: 20rem; // Full width of its container
-        padding: 0.625rem; // Use rem for padding
-        border-radius: 0.3125rem; // Use rem for border-radius
-        border: 1px solid #ccc; // Border can stay in pixels since it's minimal
+        width: 20rem;
+        padding: 0.625rem;
+        border-radius: 0.3125rem;
+        border: 1px solid #ccc;
       }
     }
 
     button {
-      width: 100%; // Full width to match the inputs
+      width: 100%;
       background-color: #333333;
       color: white;
-      padding: 0.625rem 1.25rem; // Use rem for padding
+      padding: 0.625rem 1.25rem;
       border: none;
-      border-radius: 0.3125rem; // Use rem for border-radius
+      border-radius: 0.3125rem;
       cursor: pointer;
 
       &:disabled {
